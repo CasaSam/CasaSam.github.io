@@ -38,7 +38,6 @@
           </p>
         </div>
         <div class="hero-image" aria-hidden="true">
-          <!-- Añade /images/hero.jpg en el repositorio para reemplazar -->
           <img src="images/hero.jpg" alt="" />
         </div>
       </div>
@@ -49,7 +48,6 @@
         <div>
           <h3>Sobre Casa‑Sam</h3>
           <p>Casa‑Sam es un proyecto dedicado a ofrecer soluciones completas para tu hogar: desde asesoría de diseño hasta ejecución. Nuestro objetivo: espacios funcionales, estéticos y creados a tu medida.</p>
-          <p>Nuestro equipo combina experiencia técnica con sensibilidad por el detalle.</p>
         </div>
         <div class="highlight">
           <h4>Valores</h4>
@@ -189,7 +187,7 @@
 
     <section id="contacto" class="wrap section contact-section">
       <h3>Contacto</h3>
-      <p>Puedes enviarnos un mensaje usando el formulario o escribir a <a href="mailto:contacto@casasam.example">contacto@casasam.example</a> (reemplaza por tu email).</p>
+      <p>Puedes enviarnos un mensaje usando el formulario o escribir a <a href="mailto:contacto@casasam.example">contacto@casasam.example</a>.</p>
 
       <!-- Formspree: registra tu formulario y reemplaza YOUR_FORM_ID -->
       <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
@@ -222,7 +220,6 @@
         <small>© <span id="year"></span> Casa‑Sam</small>
       </div>
       <div class="social">
-        <!-- Añade links reales si quieres -->
         <a href="#" aria-label="Instagram">IG</a>
         <a href="#" aria-label="Facebook">FB</a>
       </div>
@@ -230,10 +227,8 @@
   </footer>
 
   <script>
-    // Año dinámico
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Menú móvil
     const navToggle = document.getElementById('nav-toggle');
     const siteNav = document.getElementById('site-nav');
     navToggle.addEventListener('click', () => {
@@ -242,7 +237,6 @@
       siteNav.classList.toggle('open');
     });
 
-    // Galería (lightbox simple)
     const lightbox = document.getElementById('lightbox');
     const lbImage = document.getElementById('lb-image');
     const lbClose = document.getElementById('lb-close');
@@ -261,7 +255,6 @@
       lbImage.src = '';
     });
 
-    // Cerrar con ESC
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && !lightbox.hidden) {
         lightbox.hidden = true;
