@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Portal Casa Sam</title>
+
+  <!-- ICONO OFICIAL DE CASA SAM PARA LA PESTAÑA DEL NAVEGADOR -->
+  <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1Yr6yCal5JOMQpssp5ktgZ5jYwhbqk0n_">
+  <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1Yr6yCal5JOMQpssp5ktgZ5jYwhbqk0n_">
+
   <style>
     * {
       box-sizing: border-box;
@@ -15,7 +20,7 @@
       height: 100%;
       height: 100dvh;
       overflow: hidden;
-      background-color: #1C542D; /* Verde oficial Casa Sam */
+      background-color: #1C542D; /* Verde institucional Casa Sam */
       overscroll-behavior: none;
     }
     iframe {
@@ -33,7 +38,7 @@
   </style>
 </head>
 <body>
-  <!-- Puente con permisos activos para cámara, evidencias y pantalla completa -->
+  <!-- Puente con permisos para cámara, micrófono y evidencias -->
   <iframe 
     id="visorCasaSam"
     src=""
@@ -43,9 +48,9 @@
 
   <script>
     // TU URL DE GOOGLE APPS SCRIPT TERMINADA EN /exec
-    var URL_BASE_APPS_SCRIPT = "https://script.google.com/macros/s/AKfycbzY4vHPz-XmgGVYAYjGLowvx6vf1mcijXtDaxKxw60y8EjkJT0rJj7RXOd6Hnc9nqgd/exec";
+    var URL_BASE_APPS_SCRIPT = "PEGA_AQUI_TU_LINK_DE_APPS_SCRIPT_COMPLETO";
 
-    // Pasa automáticamente sucursales si se usan parámetros (ej: ?suc=Sam1)
+    // Pasa automáticamente las sucursales (?suc=Sam 1, ?suc=Sam 2, etc.)
     var parametros = window.location.search;
     var urlFinal = URL_BASE_APPS_SCRIPT + (parametros ? parametros : "");
     
